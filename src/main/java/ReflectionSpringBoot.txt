@@ -1,0 +1,18 @@
+Cómo usa Spring la relexion implícitamente:
+-Inyección de Dependencias:
+    Spring utiliza reflexión para encontrar las clases anotadas con @Component, @Service,
+    @Repository, y @Controller y crea instancias de ellas en tiempo de ejecución.
+
+    Luego usa reflexión para inyectarlas en las dependencias anotadas con @Autowired,
+    incluso si estas son privadas.
+
+    Ejemplo:
+
+    @Service
+    public class ClienteService {
+        @Autowired
+        private ClienteRepository clienteRepository;
+    }
+
+    Spring, usando reflexión, detecta ClientRepository como dependencia e inyecta
+    la implementación adecuada.
