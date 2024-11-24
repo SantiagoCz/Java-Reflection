@@ -1,0 +1,29 @@
+¿Qué es la Reflexión en Java?
+
+La reflexión en Java es una característica del lenguaje que permite inspeccionar y manipular
+la estructura de las clases, interfaces, campos, metodos y constructores de los objetos en
+tiempo de ejecución. Esto se logra a traves de las clases proporcionadas por el paquete:
+java.lang.reflect
+
+¿Para qué sirve?
+La reflexion se utiliza para:
+1- Inspeccionar clases en tiempo de ejecución:
+    Conocer qué metodos, campos, constructores o anotaciones tiene una clase.
+
+2- Acceder y modificar miembros privados:
+    Permite saltar las restricciones de acceso (como private), aunque debe usarse con cuidado.
+
+3- Invocar métodos dinámicamente:
+    Ejecutar métodos de un objeto sin conocerlos en tiempo de compilación.
+
+4- Crear instancias de clases dinámicamente:
+    Instanciar objetos de clases desconocidas en tiempo de compilación.
+
+5- Frameworks y bibliotecas:
+    Es fundamental para Spring, Hibernate, y JUnit, que dependen de la reflexión para su funcionalidad.
+
+Clases principales en java.lang.reflect
+-Class: Representa una clase o interfaz en tiempo de ejecución.
+-Field: Representa un Campo (variable) de una clase.
+-Method: Representa un método de la clase.
+-Constructor: Representa un constructor de una clase.
